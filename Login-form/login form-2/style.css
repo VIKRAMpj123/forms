@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Source+Serif+4:opsz@8..60&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body{
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Source Serif 4', serif;
+    height: 100vh;
+    width: 100vw;
+    background-color:#7227D5;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.card{
+    background: #fff;
+    width: 900px;
+    min-height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+   
+}
+.form,
+.image{
+    width: 50%;
+}
+.form{}
+.image{
+    background-image: url(office-620822_1280.jpg);
+    background-size: cover;
+    background-position:center;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(114,39,213,0.31) ;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   
+    
+}
+.overlay h3{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+}
+.overlay p{
+    color: white;
+    font-size: 12px;
+}
+.form{
+    padding: 60px 25px;
+    display: flex;
+    flex-direction: column;
+   }
+   .form h3{
+    font-size: 28px;
+    font-weight: 500;
+    position: relative;
+   }
+   .form h3:after{
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 3px;
+    background: #7227D5;
+    left: 0;
+    bottom: 2px;
+    border-radius: 5px;
+   }
+   .fa{
+    color: #7227D5;
+    position:absolute;
+    top: 12px;
+    font-size: 18px;
+}
+   .input-field{
+     width: 100%;
+     background-color: #1f1515;
+     margin-bottom: 20px;
+     position: relative;
+   }
+   .input-field input{
+    display: block;
+    width: 100%;
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 15px;
+}
+.form>a{
+    color: #6408db;
+   text-decoration: none;
+   font-size: 14px;
+   margin-bottom: 35px;
+}
+button{
+    height: 45px;
+    background: #7227D5;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+}
+button+p{
+    text-align: center;
+    padding-top:30px;
+    font-size: 14px;
+}
+button+p a{
+    text-decoration: none;
+    color: #7227D5;
+}
+input::placeholder{
+    font-family: 'Courier New', Courier, monospace;
+}
